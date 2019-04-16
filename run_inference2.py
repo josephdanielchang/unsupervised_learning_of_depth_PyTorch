@@ -76,7 +76,7 @@ def main():
                 print(output_np.shape)
                 print(str(r) + ', 0:' + str(args.img_width ))
                 f.write('\nROW ' + str(r) + ', COL 0:' + str(args.img_width) +  '\n')
-                f.write(str(output_np[0,r,:]))
+                f.write(str(depth[0,r,:]))
         ###
 
         file_path, file_ext = file.relpath(args.dataset_dir).splitext()                     #name output files
