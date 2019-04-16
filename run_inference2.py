@@ -68,6 +68,7 @@ def main():
         output = disp_net(tensor_img)[0]                                                    #run images through model: OUTPUT
 
         ### OUTPUT output VALUES IN TEXT FILE
+        depth = 1/output
         output_np = output.detach().cpu().numpy()
 
         with open('depth_numpy_pt.txt','w') as f:
